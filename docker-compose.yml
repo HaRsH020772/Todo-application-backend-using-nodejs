@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  backend:
+    build: .
+    env_file:
+      - /home/ubuntu/.env
+    ports:
+      - "6000:6000"
+    restart: unless-stopped
