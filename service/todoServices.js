@@ -83,7 +83,6 @@ exports.completeTask = async (req, res, next) => {
         const collection = db.collection("todos");
 
         let todoDetail = req.body.todoDetail;
-        console.log(todoDetail);
 
         let todoModification = await collection.updateOne({_id: new mongo.ObjectId(todoDetail.taskId)}, {
             $set: {

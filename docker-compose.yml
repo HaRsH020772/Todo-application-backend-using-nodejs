@@ -6,5 +6,5 @@ services:
     env_file:
       - /home/ubuntu/.env
     ports:
-      - "6000:6000"
+      - "8090:8090"
     restart: unless-stopped
